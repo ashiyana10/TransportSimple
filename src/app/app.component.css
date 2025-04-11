@@ -1,0 +1,75 @@
+.trip-input {
+    margin-bottom: 20px;
+  }
+  
+  .trip-input input {
+    margin-right: 8px;
+    padding: 6px;
+    width: 100px;
+  }
+  
+  .trip-input button {
+    padding: 6px 12px;
+  }
+  
+  .trip-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px 0;
+    overflow-x: auto;
+  }
+  
+  .trip-segment {
+    position: relative;
+    min-width: 100px;
+    text-align: center;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .line {
+    height: 2px;
+    background: #999;
+    margin: 4px auto;
+    position: relative;
+  }
+  
+  .line.arrow::after {
+    content: '➔';
+    position: absolute;
+    right: -12px;
+    top: -6px;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .label {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  /* Color Themes Based on Level */
+  .level-1 .dot,
+  .level-1 .line {
+    margin-top: 10px;
+    background-color: #5a54a4;
+  }
+  
+  .level-1-arrow .dot,
+  .level-1-arrow .line {
+    margin-top: 10px;
+    background-color: #2196f3;
+  }
+  
+  .level-2 .dot,
+  .level-2 .line {
+    background-color: #f9a825;
+  }
+  
